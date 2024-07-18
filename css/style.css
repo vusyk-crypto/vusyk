@@ -992,6 +992,35 @@ div .active_mining_btn {
 }
 
 
+.token-info {
+      font-family: Arial, sans-serif;
+      border: 1px solid #0080FF;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.1); /* Світліший напівпрозорий фон */
+      border-radius: 5px;
+      margin: 10px 10px;
+      color: #2E2EFE;
+    }
+
+    .token-info table {
+      width: 100%;
+      height: 50px; /* Висота блоку таблиці */
+      margin-bottom: 10px;
+    }
+
+    .token-info td {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .token-info p {
+      margin: 10px;
+	  color: white;
+    }
+
+
+
+
 
 
 
