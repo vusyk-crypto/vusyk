@@ -1047,3 +1047,79 @@ div .active_mining_btn {
 
 
 
+
+
+/* Это код просмотра видео */
+
+/* Это код просмотра видео */
+.custom-video {
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* Центрирование блока */
+    padding: 0;
+    width: 100%; /* Установка ширины на 100% контейнера */
+    max-width: 300px; /* Максимальная ширина блока */
+    border: none; /* Убираем границы, если они есть */
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+}
+
+
+.custom-container {
+    text-align: center;
+}
+
+.custom-video-icon img {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.custom-video-icon img:hover {
+    transform: scale(1.1);
+}
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.custom-modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 700px;
+}
+
+.custom-close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.custom-close:hover,
+.custom-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.custom-close {
+            z-index: 1001;
+        }
+
