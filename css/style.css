@@ -1020,7 +1020,7 @@ div .active_mining_btn {
 
 
 
-.custom-container {
+        .custom-container {
             background-color: #000033;
             padding: 10px;
             border-radius: 5px;
@@ -1043,7 +1043,6 @@ div .active_mining_btn {
             cursor: pointer;
             font-size: 10px;
         }
-
 
 
 
