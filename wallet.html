@@ -228,6 +228,73 @@
     <li>Дочекайтеся завершення транзакції.</li>
 </ul>
 
+
+<!-- Видео инструкция. Начало. -->
+<div class="custom-video">
+    <div class="custom-container">
+        <p>Переглянути відео інструкцію</p>
+        <div class="custom-video-icon" id="openVideoButton">
+            <img src="images/video_icon.png" alt="Video Icon">
+        </div>
+    </div>
+    <div id="custom-video-modal" class="custom-modal">
+        <div class="custom-modal-content">
+            <span class="custom-close" id="closeButton" onclick="closeVideoModal(); event.stopPropagation();">&times;</span>
+            <video id="custom-video-player" controls>
+                <source src="media/instructions.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('custom-video-modal');
+            var video = document.getElementById('custom-video-player');
+            var openButton = document.getElementById('openVideoButton');
+            var closeButton = document.getElementById('closeButton');
+
+            console.log('Элемент крестика:', closeButton);
+
+            function openVideoModal() {
+                modal.style.display = 'block';
+                video.play();
+            }
+
+            function closeVideoModal() {
+                console.log('Закрытие видео');
+                modal.style.display = 'none';
+                video.pause();
+                video.currentTime = 0;
+            }
+
+            openButton.addEventListener('click', openVideoModal);
+
+            closeButton.addEventListener('click', function(event) {
+                console.log('Крестик нажат');
+                event.stopPropagation();
+                closeVideoModal();
+            });
+
+            document.querySelector('.custom-modal-content').addEventListener('click', function(event) {
+                if (event.target.classList.contains('custom-close')) {
+                    console.log('Клик на крестике (делегирование)');
+                    closeVideoModal();
+                }
+            });
+
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    closeVideoModal();
+                }
+            });
+        });
+    </script>
+</div>
+<!-- Видео инструкция. Конец. -->
+
+
+
+
 <h4>Крок 4: Додавання VUSYK до вашого гаманця</h4>
 <ul>
     <li>У вікні гаманця Phantom натисніть на значок "+" біля "Your Assets".</li>
