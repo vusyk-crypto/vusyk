@@ -1020,10 +1020,29 @@ div .active_mining_btn {
 
 
 
-
-
-
-
+.custom-container {
+            background-color: #000033;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+            word-wrap: break-word;
+            word-break: break-all;
+            position: relative;
+        }
+        .custom-copy-button {
+            position: absolute;
+            top: -20px;
+            right: 0px;
+            background-color: #333333;
+            border: none;
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 10px;
+        }
 
 
 
