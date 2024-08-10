@@ -147,6 +147,15 @@ a:focus {
   font-weight: bold;
   font-size: 24px;
   color: #ffffff;
+  background-image: url('../images/coin.png'); /* Путь к изображению */
+  background-size: contain; /* Изменяет размер изображения, чтобы оно полностью помещалось */
+  background-repeat: no-repeat; /* Предотвращает повторение изображения */
+  background-position: center; /* Центрирует изображение */
+  display: inline-block; /* Позволяет использовать размеры */
+  width: 50px; /* Ширина для отображения изображения */
+  height: 50px; /* Высота для отображения изображения */
+  padding-left: 60px; /* Дополнительное пространство для текста рядом с изображением */
+  
 }
 
 .custom_nav-container {
@@ -934,6 +943,10 @@ a:focus {
   font-size: 20px;	
 }
 
+
+.hero_area + div > .mining_section .active_mining_btn {
+    display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
 div .active_mining_btn {
